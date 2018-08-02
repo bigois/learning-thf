@@ -1,0 +1,54 @@
+<thf-page-default t-title="THF COMPONENTS">
+  <!-- BEGIN: THFBUTTON -->
+  <div>
+    <div class="thf-row">
+      <p class="thf-font-text">
+        THFBUTTON
+      </p>
+    </div>
+    <div class="thf-row">
+      <thf-button
+          t-label="Settings"
+          t-disabled="false"
+          t-icon="thf-icon thf-icon-settings"
+          t-loading="false"
+          t-small="false"
+          t-type="default"
+          (t-click)="onClickButton($event)">
+      </thf-button>
+    </div>
+  </div>
+  <!-- END: THFBUTTON -->
+  <br>
+  <!-- BEGIN: THFAVATAR -->
+  <div>
+    <div class="thf-row">
+      <p class="thf-font-text">
+        THFAVATAR
+      </p>
+    </div>
+    <div class="thf-row">
+      <thf-avatar
+        t-size="xl"
+        t-src="./assets/images/avatar.jpg">
+      </thf-avatar>
+    </div>
+  </div>
+  <!-- END: THFAVATAR -->
+  <br>
+  <!-- BEGIN: THFCHART -->
+  <div>
+    <div class="thf-row">
+      <p class="thf-font-text">
+        THFCHART
+      </p>
+    </div>
+    <div class="thf-row">
+      <thf-chart
+        t-label-visible="true"
+        [t-series]="[{ data: [100]}, { data: [25] }, { data: [50] }]">
+      </thf-chart>
+    </div>
+  </div>
+  <!-- END: THFCHART -->
+</thf-page-default>
